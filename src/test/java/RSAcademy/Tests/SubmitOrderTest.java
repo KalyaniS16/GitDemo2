@@ -67,7 +67,7 @@ public class SubmitOrderTest extends BaseTest{
 		System.out.println("India selected");
 		
 		ConfirmationPage cnfmpg = checkOutPge.submitOrder();
-		System.out.println("Place order");
+		System.out.println("User has Placed the order");
 		String confirmationMessage = cnfmpg.getConfirmationMessage();
 		Assert.assertTrue(confirmationMessage.equalsIgnoreCase("Thankyou for the order."));	
 		System.out.println(confirmationMessage);
