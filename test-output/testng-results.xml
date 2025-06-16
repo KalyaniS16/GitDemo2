@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-06-14T21:31:04 IST" name="Default suite" finished-at="2025-06-14T21:31:11 IST" duration-ms="6702">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@7dc0f706]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-06-14T21:31:04 IST" name="Default test" finished-at="2025-06-14T21:31:11 IST" duration-ms="6702">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@7dc0f706]" started-at="2025-06-14T21:31:04 IST" name="setUpClass" finished-at="2025-06-14T21:31:05 IST" duration-ms="518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@707b1a44]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@7dc0f706]" started-at="2025-06-14T21:31:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-14T21:31:05 IST" duration-ms="90" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to write a step with name1' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to write a step with name1")
+public void i_want_to_write_a_step_with_name1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I check for the {int} in step")
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I verify the success in step")
+public void i_verify_the_success_in_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to write a step with name1' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to write a step with name1")
+public void i_want_to_write_a_step_with_name1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I check for the {int} in step")
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I verify the success in step")
+public void i_verify_the_success_in_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.I want to write a step with name1(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/ErrorValidationTest.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@7dc0f706]" started-at="2025-06-14T21:31:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-14T21:31:05 IST" duration-ms="6" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Title of your scenario outline"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Title of your feature"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="io.cucumber.testng.UndefinedStepException">
+            <message>
+              <![CDATA[The step 'I want to write a step with name2' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to write a step with name2")
+public void i_want_to_write_a_step_with_name2() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I check for the {int} in step")
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I verify the Fail in step")
+public void i_verify_the_fail_in_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.cucumber.testng.UndefinedStepException: The step 'I want to write a step with name2' and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given("I want to write a step with name2")
+public void i_want_to_write_a_step_with_name2() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("I check for the {int} in step")
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("I verify the Fail in step")
+public void i_verify_the_fail_in_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+at ✽.I want to write a step with name2(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/ErrorValidationTest.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.cucumber.testng.UndefinedStepException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@7dc0f706]" started-at="2025-06-14T21:31:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-06-14T21:31:11 IST" duration-ms="5909" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive test of submitting the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at RSAcademy.pageObjectModel.ProductCatalogue.addProductToCart(ProductCatalogue.java:90)
+at RSAcademy.stepDefinition.StepDefinitionImpl.adding_list_of_product_to_Cart(StepDefinitionImpl.java:44)
+at ✽.I add the <productName> from Cart(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/SubmitOrderTest.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@7dc0f706]" started-at="2025-06-14T21:31:11 IST" name="tearDownClass" finished-at="2025-06-14T21:31:11 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,186 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Jun 14 21:31:04 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6702 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Title of your scenario outline", "Title of your feature"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I want to write a step with name2&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I want to write a step with name2&quot;)
+public void i_want_to_write_a_step_with_name2() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I check for the {int} in step&quot;)
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I verify the Fail in step&quot;)
+public void i_verify_the_fail_in_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I want to write a step with name2(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/ErrorValidationTest.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1746257394", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1746257394'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I want to write a step with name2&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I want to write a step with name2&quot;)
+public void i_want_to_write_a_step_with_name2() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I check for the {int} in step&quot;)
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I verify the Fail in step&quot;)
+public void i_verify_the_fail_in_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I want to write a step with name2(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/ErrorValidationTest.feature:8)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.TestNGTestRunner@7dc0f706</td></tr>
+<tr>
+<td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Positive test of submitting the order", "Purchase the order from Ecommerce website"</td>
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at RSAcademy.pageObjectModel.ProductCatalogue.addProductToCart(ProductCatalogue.java:90)
+	at RSAcademy.stepDefinition.StepDefinitionImpl.adding_list_of_product_to_Cart(StepDefinitionImpl.java:44)
+	at ✽.I add the &lt;productName&gt; from Cart(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/SubmitOrderTest.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1414431049", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1414431049'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)&quot; because &quot;prod&quot; is null
+	at RSAcademy.pageObjectModel.ProductCatalogue.addProductToCart(ProductCatalogue.java:90)
+	at RSAcademy.stepDefinition.StepDefinitionImpl.adding_list_of_product_to_Cart(StepDefinitionImpl.java:44)
+	at ✽.I add the &lt;productName&gt; from Cart(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/SubmitOrderTest.feature:13)
+</pre></div></td>
+<td>5</td>
+<td>cucumber.TestNGTestRunner@7dc0f706</td></tr>
+<tr>
+<td title='cucumber.TestNGTestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumber.TestNGTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Title of your scenario outline", "Title of your feature"</td>
+<td><div><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I want to write a step with name1&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I want to write a step with name1&quot;)
+public void i_want_to_write_a_step_with_name1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I check for the {int} in step&quot;)
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I verify the success in step&quot;)
+public void i_verify_the_success_in_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I want to write a step with name1(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/ErrorValidationTest.feature:8)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1768952842", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1768952842'><pre>io.cucumber.testng.UndefinedStepException: The step &apos;I want to write a step with name1&apos; and 2 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@Given(&quot;I want to write a step with name1&quot;)
+public void i_want_to_write_a_step_with_name1() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When(&quot;I check for the {int} in step&quot;)
+public void i_check_for_the_in_step(Integer int1) {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then(&quot;I verify the success in step&quot;)
+public void i_verify_the_success_in_step() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+	at ✽.I want to write a step with name1(file:///C:/Workspace/SeleniumNewWorkspace/SeleniumFrameworkDesign/src/test/java/cucumber/ErrorValidationTest.feature:8)
+</pre></div></td>
+<td>0</td>
+<td>cucumber.TestNGTestRunner@7dc0f706</td></tr>
+</table><p>
+</body>
+</html>
