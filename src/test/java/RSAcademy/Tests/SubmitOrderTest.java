@@ -41,6 +41,8 @@ public class SubmitOrderTest extends BaseTest{
 //		ProductCatalogue productCatalogue = landingPage.loginApplication(userEmail, userPassword);    //this method is from landing page class		
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("userEmail"), input.get("userPassword"));
 		System.out.println("LoggedIn Correctly");
+		System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@");
+		System.out.println("%%%%%%%%%%%%%%%%%");
 		
 //		creating object of ProductCatalogue class 
 		List<WebElement> products =	 productCatalogue.getProductList();	
