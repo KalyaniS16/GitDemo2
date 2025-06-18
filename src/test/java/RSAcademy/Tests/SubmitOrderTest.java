@@ -67,6 +67,7 @@ public class SubmitOrderTest extends BaseTest{
 		CheckOutPage checkOutPge = cartPage.goToCheckOut();
 		checkOutPge.selectCountry("India");
 		System.out.println("India selected");
+		System.out.println("*************My Country is selected*****************");
 		
 		ConfirmationPage cnfmpg = checkOutPge.submitOrder();
 		System.out.println("User has Placed the order");
